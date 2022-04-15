@@ -15,9 +15,6 @@ class Hit:
         self.id = ''
         self.creation_time = ''
 
-    # prod          access_key = AKIA2C74GNZEAZQQZ3EU       secret_key = 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
-    # dev           access_key =AKIA2MBONTRUQTYESU2G        secret_key = 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
-
     def create(self):
         mturk = boto3.client('mturk',
                              aws_access_key_id=access_key_id,
