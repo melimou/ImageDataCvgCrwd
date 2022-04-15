@@ -20,8 +20,8 @@ class Hit:
 
     def create(self):
         mturk = boto3.client('mturk',
-                             aws_access_key_id="AKIA2C74GNZEAZQQZ3EU",
-                             aws_secret_access_key="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",
+                             aws_access_key_id=access_key_id,
+                             aws_secret_access_key=secret_access_key,
                              region_name='us-east-1',
                              endpoint_url=self.endpoint
                              )
@@ -39,7 +39,7 @@ class Hit:
             Question=question,
         )
         print("*** Task created ***")
-        print("https://workersandbox.mturk.com/mturk/preview?groupId=" + new_hit['HIT']['HITGroupId'])
+        print("https://worker.mturk.com/mturk/preview?groupId=" + new_hit['HIT']['HITGroupId'])
         print("HITID = " + new_hit['HIT']['HITId'])
         self.id = new_hit['HIT']['HITId']
         self.creation_time = new_hit['HIT']['CreationTime'].isoformat()
@@ -48,8 +48,8 @@ class Hit:
     def result(self, hit_id):
         answers = []
         mturk = boto3.client('mturk',
-                             aws_access_key_id="AKIA2MBONTRUQTYESU2G",
-                             aws_secret_access_key="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",
+                             aws_access_key_id=access_key_id,
+                             aws_secret_access_key=secret_access_key,
                              region_name='us-east-1',
                              endpoint_url=self.endpoint
                              )
@@ -101,31 +101,3 @@ class Hit:
 
 # test
 
-client = boto3.client('mturk',
-                             aws_access_key_id="AKIA2C74GNZEAZQQZ3EU",
-                             aws_secret_access_key="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",
-                             region_name='us-east-1',
-                             endpoint_url='https://mturk-requester.us-east-1.amazonaws.com'
-                             )
-response = client.list_hits(
-    MaxResults=99
-)
-print(response['NextToken'])
-for hit in response['HITs']:
-    print(hit['Reward'])
-
-response = client.list_hits(
-    NextToken = 'p2:gJDaMiwcP/w6OQ3Xahs9GO8Qg1nBrtp2XmIFqYRpWY/vYKL/H9ltw8y4B3lSiA==',
-    MaxResults=99
-)
-print(response['NextToken'])
-for hit in response['HITs']:
-    print(hit['Reward'])
-
-response = client.list_hits(
-    NextToken = 'p2:TVbwmLsv2+alIAajZvT4NbPT9NammAvUtFMXvXQZHzgyPOXyDd463NNjWxSwmA==',
-    MaxResults=99
-)
-print(response['NextToken'])
-for hit in response['HITs']:
-    print(hit['Reward'])

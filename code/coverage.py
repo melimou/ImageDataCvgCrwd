@@ -64,13 +64,13 @@ def coverage(dataset, n, k):
 
 # test
 
-dataset = Data('data_full.csv').dataset_init()
-shuffle(dataset)
-N = len(dataset)  # dataset size
-n = 10  # subset size
-k = 5  # coverage threshold
-result, questions = coverage(dataset[:50], n, k)
-print(result, questions)
-f = open('log.txt', 'a')
-f.write('result: ' + str(result) + '\t' + 'questions: ' + str(questions) + '\n')
-f.close()
+# dataset = Data('data_full.csv').dataset_init()
+# shuffle(dataset)
+# N = len(dataset)  # dataset size
+# n = 10  # subset size
+# k = 5  # coverage threshold
+# result, questions = coverage(dataset[:50], n, k)
+# print(result, questions)
+# f = open('log.txt', 'a')
+# f.write('result: ' + str(result) + '\t' + 'questions: ' + str(questions) + '\n')
+# f.close()
