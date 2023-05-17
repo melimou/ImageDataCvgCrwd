@@ -1,0 +1,60 @@
+<HTMLQuestion xmlns="http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2011-11-11/HTMLQuestion.xsd">
+           <HTMLContent>
+               <![CDATA[
+        <!-- YOUR HTML BEGINS -->
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+                <script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+                </head>
+        <crowd-form answer-format="flatten-objects">
+
+            <p> <strong>Instructions: </strong> Please look at the images below closely and answer this question with 
+            "yes" or "no". Make sure you scroll down to the end of page and select an answer before submitting. </p> 
+            <p style="text-align:center;"> <b>Is there a <strong>female</strong> in this set of images?</b> </p> 
+
+            <!-- Your image file URLs will be substituted for the "image_url" variable below
+                  when you publish a batch with a CSV input file containing multiple image file URLs.
+                  To preview the element with an example image, try setting the src attribute to
+                  "https://s3.amazonaws.com/cv-demo-images/basketball-outdoor.jpg" -->
+            <p style="text-align:center;"><img src="https://cov-img.s3.amazonaws.com/feret-full/00187_940128_hl_a.jpeg" style="max-width: 100%; max-height: 250px" />
+<img src="https://cov-img.s3.amazonaws.com/feret-full/00295_940422_fa.jpeg" style="max-width: 100%; max-height: 250px" />
+<img src="https://cov-img.s3.amazonaws.com/feret-full/00587_940928_rc.jpeg" style="max-width: 100%; max-height: 250px" />
+<img src="https://cov-img.s3.amazonaws.com/feret-full/00499_940519_fa.jpeg" style="max-width: 100%; max-height: 250px" />
+<img src="https://cov-img.s3.amazonaws.com/feret-full/00659_941121_hl.jpeg" style="max-width: 100%; max-height: 250px" />
+</p><p style="text-align:center;"><img src="https://cov-img.s3.amazonaws.com/feret-full/00116_931230_fa.jpeg" style="max-width: 100%; max-height: 250px" /> 
+<img src="https://cov-img.s3.amazonaws.com/feret-full/00491_960627_ql.jpeg" style="max-width: 100%; max-height: 250px" />
+<img src="https://cov-img.s3.amazonaws.com/feret-full/00588_941031_hr.jpeg" style="max-width: 100%; max-height: 250px" />
+<img src="https://cov-img.s3.amazonaws.com/feret-full/00724_960530_hr.jpeg" style="max-width: 100%; max-height: 250px" />
+<img src="https://cov-img.s3.amazonaws.com/feret-full/00268_940307_pr.jpeg" style="max-width: 100%; max-height: 250px" />
+</p><p style="text-align:center;"><img src="https://cov-img.s3.amazonaws.com/feret-full/00713_941201_rd.jpeg" style="max-width: 100%; max-height: 250px" /> 
+<img src="https://cov-img.s3.amazonaws.com/feret-full/00737_941201_re.jpeg" style="max-width: 100%; max-height: 250px" />
+<img src="https://cov-img.s3.amazonaws.com/feret-full/00293_940422_fa.jpeg" style="max-width: 100%; max-height: 250px" />
+<img src="https://cov-img.s3.amazonaws.com/feret-full/00603_940928_ql.jpeg" style="max-width: 100%; max-height: 250px" />
+<img src="https://cov-img.s3.amazonaws.com/feret-full/00186_940128_pl_a.jpeg" style="max-width: 100%; max-height: 250px" />
+</p><p style="text-align:center;"><img src="https://cov-img.s3.amazonaws.com/feret-full/00383_940928_hr.jpeg" style="max-width: 100%; max-height: 250px" /> 
+<img src="https://cov-img.s3.amazonaws.com/feret-full/00256_940128_fb.jpeg" style="max-width: 100%; max-height: 250px" />
+<img src="https://cov-img.s3.amazonaws.com/feret-full/00521_940519_pl.jpeg" style="max-width: 100%; max-height: 250px" />
+<img src="https://cov-img.s3.amazonaws.com/feret-full/00544_940519_hr_a.jpeg" style="max-width: 100%; max-height: 250px" />
+<img src="https://cov-img.s3.amazonaws.com/feret-full/00709_941201_fa.jpeg" style="max-width: 100%; max-height: 250px" />
+</p><p style="text-align:center;"><img src="https://cov-img.s3.amazonaws.com/feret-full/00660_960620_rb.jpeg" style="max-width: 100%; max-height: 250px" /> 
+<img src="https://cov-img.s3.amazonaws.com/feret-full/00349_940422_fa.jpeg" style="max-width: 100%; max-height: 250px" />
+<img src="https://cov-img.s3.amazonaws.com/feret-full/00496_940519_fb.jpeg" style="max-width: 100%; max-height: 250px" />
+<img src="https://cov-img.s3.amazonaws.com/feret-full/00668_941121_fb.jpeg" style="max-width: 100%; max-height: 250px" />
+<img src="https://cov-img.s3.amazonaws.com/feret-full/00036_930831_fb_a.jpeg" style="max-width: 100%; max-height: 250px" />
+</p>
+            <br><br>
+                <div class="text-align:center;padding:300px;" style="width:200px; margin:auto;">
+                  <input type="radio" id="yes" name="gender" value="yes" required>
+                  <label for="yes">Yes</label>
+                  <input type="radio" id="no" name="gender" value="no">
+                  <label for="no">No</label>
+                </div><br>
+        </crowd-form>
+        </html>
+        <!-- YOUR HTML ENDS -->
+        ]]>
+           </HTMLContent>
+           <FrameHeight>0</FrameHeight>
+        </HTMLQuestion>
